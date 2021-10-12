@@ -9,7 +9,7 @@ function Video( {video} ) {
             src={video.embedUrl}
             frameBorder="0"
             allowFullScreen
-            title="Thinking in React"
+            title={video.title}
             />
             <h1>{video.title}</h1>
             <p>{video.views} Views | Uploaded {video.createdAt}</p>

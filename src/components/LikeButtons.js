@@ -1,13 +1,18 @@
 import React from 'react';
 
-function LikeButtons( {video} ) {
+function LikeButtons( {video, upvotesCount, downvotesCount, handleUpClick, handleDownClick} ) {
+
     return (
         <>
-            <button>
-                {video.upvotes} 👍
+            <button
+            onClick={handleUpClick}
+            >
+                {upvotesCount} 👍
             </button>
-            <button>
-                {video.downvotes} 👎
+            <button
+            onClick={handleDownClick}
+            >
+                {downvotesCount} 👎
             </button>
         </>
     )
