@@ -5,7 +5,7 @@ import LikeButtons from './LikeButtons';
 import Comments from './Comments';
 
 function App() {
-  console.log("Here's your data:", video);
+  //console.log("Here's your data:", video);
 
   const [upvotesCount, setUpvotesCount] = useState(video.upvotes)
   const [downvotesCount, setDownvotesCount] = useState(video.downvotes)
